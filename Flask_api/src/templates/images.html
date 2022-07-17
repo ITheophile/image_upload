@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+{% from "card.html" import card %}
+{% block title %}Uploaded images{% endblock %}
+
+{% block content %}
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for idx in data %}
+        {{ card(data[idx][1], data[idx][0]) }}
+    {% endfor %}
+    </div>
+    
+{% endblock %}

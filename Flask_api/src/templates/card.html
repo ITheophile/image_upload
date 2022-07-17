@@ -1,0 +1,14 @@
+
+{% macro card(img_pth, card_title) %}
+
+  <div class="col">
+    <div class="card bg-secondary">
+      <img src= "{{img_pth}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{card_title}}</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+
+{% endmacro %}
